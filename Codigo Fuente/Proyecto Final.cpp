@@ -52,6 +52,8 @@ public:
 };
 
 int main() {
+    setlocale(LC_ALL, "");
+
     std::vector<std::string> inputLabels = { "Experiencia", "Habilidades", "Educación", "Idiomas" };
 
     int numInputs = inputLabels.size(); // Número de entradas
@@ -89,5 +91,6 @@ int main() {
         std::cout << "Peso " << i + 1 << ": " << learnedParameters[i] << std::endl;
     }
 
+    system("pause");
     return 0;
 }
